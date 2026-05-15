@@ -91,7 +91,7 @@
   <div class="glow bottom"></div>
 
   <div class="container">
-    <h1>Hola <span>Mundo</span></h1>
+    <h1>Hello <span>World</span></h1>
 
     <p>
       Bienvenido a tu primera plantilla HTML5 moderna.

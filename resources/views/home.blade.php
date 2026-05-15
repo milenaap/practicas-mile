@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Práctica Mile</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #0f0f0f, #1e1e2f, #111);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      overflow: hidden;
+    }
+
+    .container {
+      text-align: center;
+      padding: 60px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 40px rgba(0, 255, 200, 0.15);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 5rem;
+      color: white;
+      margin-bottom: 20px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    h1 span {
+      color: #00ffd5;
+    }
+
+    p {
+      color: #cfcfcf;
+      font-size: 1.2rem;
+      max-width: 600px;
+      line-height: 1.6;
+    }
+
+    .glow {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: #00ffd5;
+      filter: blur(150px);
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .glow.top {
+      top: -100px;
+      left: -100px;
+    }
+
+    .glow.bottom {
+      bottom: -100px;
+      right: -100px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="glow top"></div>
+  <div class="glow bottom"></div>
+
+  <div class="container">
+    <h1>Hola <span>Mundo</span></h1>
+
+    <p>
+      Bienvenido a tu primera plantilla HTML5 moderna.
+      
+      Minimalista, elegante y preparada para empezar cualquier proyecto web.
+    </p>
+  </div>
+
+</body>
+</html>
